@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>계정지갑 개인정보처리방침</title>
+  <style>
+    :root {
+      --fg: #1a1a1a;
+      --muted: #555;
+      --bg: #ffffff;
+      --accent: #4F6DF5;
+      --rule: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f3f4f6;
+        --muted: #9ca3af;
+        --bg: #0f172a;
+        --rule: #1f2937;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 32px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+    }
+    p, li { font-size: 15px; }
+    ul { padding-left: 20px; }
+    code {
+      background: var(--rule);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    a { color: var(--accent); }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(79, 109, 245, 0.12);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="badge">계정지갑</span>
+    <h1>개인정보처리방침</h1>
+    <p class="updated">최종 업데이트: 2026-04-25</p>
+
+    <p>
+      본 방침은 모바일 애플리케이션 <strong>계정지갑</strong>(이하 "앱")이 사용자 정보를
+      어떻게 처리하는지 설명합니다. 앱은 사용자의 사이트 계정 정보를 한 곳에 모아
+      관리할 수 있도록 도와주며, 모든 데이터는 사용자 기기 내에만 저장됩니다.
+    </p>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <p>
+      앱 자체는 사용자의 어떠한 개인정보도 외부 서버로 전송하거나 수집하지 않습니다.
+      사용자가 앱에 직접 입력한 다음 정보는 <strong>오직 사용자 기기 내부에만</strong>
+      AES-256 암호화로 저장됩니다.
+    </p>
+    <ul>
+      <li>사이트 제목 및 URL</li>
+      <li>아이디 / 이메일</li>
+      <li>비밀번호 및 2차 비밀번호</li>
+      <li>사용자가 추가한 임의 필드 / 메모</li>
+      <li>카테고리 분류</li>
+    </ul>
+
+    <h2>2. 데이터 저장 위치</h2>
+    <p>
+      모든 계정 데이터는 사용자가 직접 설정한 <strong>마스터 비밀번호</strong>로
+      파생된 키를 통해 AES-256-GCM 방식으로 암호화되어 기기의 로컬 데이터베이스에
+      저장됩니다. 마스터 비밀번호는 어떠한 형태로도 저장되지 않으며, 분실 시
+      복구가 불가능합니다.
+    </p>
+    <p>
+      백업 기능을 사용해 사용자가 명시적으로 파일을 내보낼 때만 외부 저장소로
+      데이터가 유출될 수 있으며, 이 파일은 사용자가 별도로 설정한 비밀번호로 다시
+      한번 암호화됩니다.
+    </p>
+
+    <h2>3. 권한 사용 내역</h2>
+    <ul>
+      <li>
+        <strong>생체 인증 (Face ID / Touch ID / 지문)</strong> — 잠금 해제 시 사용.
+        생체 정보 자체는 OS의 보안 영역에서만 처리되며 앱에 노출되지 않습니다.
+      </li>
+      <li>
+        <strong>파일 접근</strong> — 백업 내보내기 / 불러오기 시 사용자가 직접
+        선택한 파일에 한해 사용.
+      </li>
+      <li>
+        <strong>인터넷</strong> — 사이트 파비콘(아이콘) 표시 및 광고 표시.
+      </li>
+    </ul>
+
+    <h2>4. 광고 (Google AdMob)</h2>
+    <p>
+      앱 운영을 위해 Google AdMob을 통해 배너 광고가 표시될 수 있습니다.
+      AdMob은 광고 식별자(IDFA / AAID), 대략적인 위치, 기기 정보 등 비개인적
+      식별자를 사용해 맞춤 광고를 제공할 수 있습니다. 자세한 내용은
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">
+        Google 광고 정책</a>을 참고하세요.
+    </p>
+    <p>
+      iOS 사용자는 <em>설정 → 개인정보 보호 및 보안 → 추적</em>에서, Android
+      사용자는 <em>설정 → Google → 광고</em>에서 광고 추적을 비활성화할 수
+      있습니다.
+    </p>
+
+    <h2>5. 데이터 삭제</h2>
+    <p>
+      사용자는 아래 방법으로 앱이 보관 중인 모든 데이터를 즉시 제거할 수 있습니다.
+    </p>
+    <ul>
+      <li>앱 내에서 개별 계정 또는 카테고리 삭제</li>
+      <li>
+        OS의 앱 설정에서 앱 데이터 / 캐시 삭제 (Android: <code>설정 → 앱 → 계정지갑 → 저장공간 → 데이터 삭제</code>)
+      </li>
+      <li>앱 자체를 제거 — 모든 로컬 데이터가 함께 삭제됩니다.</li>
+    </ul>
+
+    <h2>6. 정보의 제3자 제공</h2>
+    <p>
+      개발자는 사용자의 계정 정보를 어떠한 제3자에게도 제공하지 않으며, 제공할 수
+      있는 수단도 갖고 있지 않습니다 (서버 측 저장이 존재하지 않음).
+    </p>
+
+    <h2>7. 만 14세 미만 사용자</h2>
+    <p>
+      앱은 만 14세 미만 아동을 주 대상으로 하지 않으며, 14세 미만 사용자의 개인정보를
+      의도적으로 수집하지 않습니다.
+    </p>
+
+    <h2>8. 방침의 변경</h2>
+    <p>
+      본 개인정보처리방침은 관련 법령, 운영 정책의 변화에 따라 수정될 수 있으며,
+      변경 시 본 페이지를 통해 고지합니다.
+    </p>
+
+    <h2>9. 문의처</h2>
+    <p>
+      개인정보 관련 문의: <a href="mailto:chl6034@gmail.com">chl6034@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
